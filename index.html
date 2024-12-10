@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.center {
+  text-align: center;
+  margin: 10px;
+}
+    
+
+#dport {
+  display: block;
+  margin-right: 2%;
+  float: left;
+} 
+
+figure {
+  display: block;
+  float: right;
+}
+
+#dock {
+  display: block;
+  margin-left: 2%;
+  float: right;
+}
+
+figcaption {
+  color: black;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 0px;
+  text-align: center;
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #36454F;
+  font-family: Helvetica, sans-serif;
+}
+
+audio {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.attractions {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+figcaption {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+</style>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <div class="center">
+        <h1 class="attractions">Plymouth's Maritime History</h1>
+      </div>
+</head>
+<body>
+  <div class="topnav">
+    <a href="intro.html">Introduction</a>
+    <a href="attractions.html">Maritime Tourist Attractions</a>
+    <a href="timeline.html">Plymouth's Maritime Timeline</a>
+    <a href="factfile.html">Maritime Facts</a>
+    <a href="index.html">HMNB Devonport</a>
+    <a href="about.html">Sir Francis Drake</a>
+    <a href="hawkins.html">Sir John Hawkins</a>
+  </div>
+  </div>
+  <div>
+    <h2>HMNB Devonport</h2>
+    <audio controls autoplay muted>
+      <source src="devonport.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <p>Operated by the Royal Navy, <img src="https://live.staticflickr.com/7832/46262938665_b2d770055c_b.jpg" style="width: 45%" id="dock">
+      HMNB Devonport is 1 of 3 Naval Bases in use in the UK to this day, and the only nuclear repair and refuelling facility for the Royal Navy.
+      The base began as a Royal Navy Dockyard in the late 17th century, designed and built on open ground by Edmund Dummer as an integrated facility for the repair and maintenance of warships. Over the 2 following centuries, it expanded,
+    and in the 20th century reached its current extent. The yard was known as HM Dockyard, Plymouth until 1843, when it was renamed HM Dockyard, Devonport. Then, in the late 20th century,'Naval Base' replaced 'Dockyard'
+    in the official naval designation. The Naval Base as a whole covers an area of 650 acres (2.6 km2) with 4 miles (6 km) of waterfront; it has 25 tidal berths, five basins and fourteen dry docks (docks numbered 1 to 15, but there is
+    no 13 Dock). The base employs 2,500 service personnel and civilians and contributes to approximately 10% of Plymouth's income</p>
+    <h3>Type 23 Frigates at HMNB Devonport</h3>
+    <ul>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Royal_Navy_Type_23_Frigate_HMS_Somerset_MOD_45153155.jpg" width="500" height="300" id="dport">
+        <figcaption>A photo of the HMS Somerset</figcaption>
+     </figure>
+      <li>HMS Northumberland</li>
+      <li>HMS Richmond</li>
+      <li>HMS Portland</li>
+      <li>HMS Somerset</li>
+      <li>HMS Kent</li>
+      <li>HMS Sutherland</li>
+      <li>HMS St Albans</li>
+    </ul>
+    <h3>Submarine at HMNB Devonport</h3>
+    <ul>
+      <li>HMS Triumph</li>
+    </ul>
+    <h3>Ships at HMNB Devonport</h3>
+    <ul>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Royal_Navy_Antarctic_Patrol_Ship_HMS_Protector_MOD_45153156.jpg/1200px-Royal_Navy_Antarctic_Patrol_Ship_HMS_Protector_MOD_45153156.jpg" width="500" height="300">
+        <figcaption>A photo of the HMS Protector</figcaption>
+     </figure>
+      <li>HMS Magpie (Survey Ship)</li>
+      <li>HMS Scott (Survey Ship)</li>
+      <li>HMS Protector (Antarctic patrol ship)</li>
+      <li>RFA Argus (Aviation support ship)</li>
+    </ul>
+    </div>
+</body>
+</html>

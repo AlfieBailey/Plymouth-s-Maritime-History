@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+    .center {
+  text-align: center;
+  margin: 10px;
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #034153;
+  font-family: Helvetica, sans-serif;
+}
+
+
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+b {
+  color: rgb(0, 0, 0);
+}
+
+audio {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.attractions {
+  color: white;
+}
+
+</style>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <div class="center">
+        <h1 class="attractions">Plymouth's Maritime History</h1>
+      </div>
+</head>
+<body>
+  <div class="topnav">
+    <a href="intro.html">Introduction</a>
+    <a href="attractions.html">Maritime Tourist Attractions</a>
+    <a href="timeline.html">Plymouth's Maritime Timeline</a>
+    <a href="factfile.html">Maritime Facts</a>
+    <a href="index.html">HMNB Devonport</a>
+    <a href="about.html">Sir Francis Drake</a>
+    <a href="hawkins.html">Sir John Hawkins</a>
+  </div>
+    <h2>Plymouth's Maritime Atrractions</h2>
+    <audio controls autoplay muted>
+      <source src="attractions.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <p>With the city being nicknamed as "Britain's Ocean City", it'd be a fairly safe assumption for one to think that there will be a fair share of maritime related attractions scattered around Plymouth, and that is indeed the case.
+       A lot of the notable touristy-like attractions are in the same vacinity as you'd expect, but there are a few maritime hotspots across Plymouth, in particular at/near the coast.
+    </p>
+ <b class="bold">Below, is an interactive map with certain markers dotted around, all in relation to touristy areas in Plymouth.</b>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="js/sketch.js"></script>  
+</body>
+</html>
